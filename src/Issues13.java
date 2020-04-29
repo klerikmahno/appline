@@ -9,8 +9,10 @@ public class Issues13 {
         String y = console.nextLine();
         if(x.length() == y.length()){
             System.out.println("Строки равной длины!");
+        }else if (x.length()>y.length()){
+            System.out.println(x);
         }else {
-            System.out.println("Строки разной длины!");
+            System.out.println(y);
         }
     }
 }
