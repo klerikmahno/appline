@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Issues10 {
     public static void main(String[] args) {
-        System.out.print("Введите коллчиество и длину строк массива: ");
+        System.out.print("Введите количество и длину строк массива: ");
         Scanner console = new Scanner(System.in);
         int x = console.nextInt();
         int y = console.nextInt();
