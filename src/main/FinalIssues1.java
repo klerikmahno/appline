@@ -10,11 +10,19 @@ public class FinalIssues1 {
         double b = 0;
         int count = 0;
         while (a > 0 ){
-            b = b + (a%10 * (Math.pow(2,count)));
-            a = a/10;
-            count++;
+            if(a%10 == 1 || a%10 == 0){
+                b = b + (a%10 * (Math.pow(2,count)));
+                a = a/10;
+                count++;
+            }else{
+                b = 0;break;
+            }
         }
-        int result = (int)b;
-        System.out.println(result);
+        if(a!=0 && b==0){
+            System.out.println("Число не в двоичной системе!");
+        }else {
+            int result = (int) b;
+            System.out.println(result);
+        }
     }
 }
